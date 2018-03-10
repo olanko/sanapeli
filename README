@@ -1,0 +1,11 @@
+
+Fetch dictionary from: http://ispell-fi.sourceforge.net/finnish.dict.bz2
+
+Uncompress file and convert it to UTF8:
+
+bunzip2 finnish.dict.bz2
+iconv -f ISO-8859-15 -t UTF-8 finnish.dict > finnish-utf8.dict
+
+run:
+
+node sanapeli.js porkkana
